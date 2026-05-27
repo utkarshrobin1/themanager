@@ -21,6 +21,7 @@ import re
 import time
 import json
 import html
+import os
 import uuid
 from datetime import datetime, timedelta
 from functools import wraps
@@ -51,7 +52,7 @@ from telegram.error import BadRequest, Forbidden, TelegramError
 # ══════════════════════════════════════════════════════════
 #  CONFIGURATION
 # ══════════════════════════════════════════════════════════
-BOT_TOKEN = "8879135962:AAHTdGaJnNwDuoWqDVSmMn7Jt6hg5lhqc-U"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 OWNER_ID  = 6336459877
 MONGO_URI = "mongodb+srv://eclbot:eclbot1234@cluster0.eamckjk.mongodb.net/?appName=Cluster0"
 
